@@ -1,0 +1,11 @@
+ul {
+  list-style: none;
+  color: blue;
+  line-height: 1.5;
+  }
+
+h3 {
+  color: white;
+  background-color: black;
+  width: fit-content;
+}

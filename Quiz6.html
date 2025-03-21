@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div {
+      border: 2px solid;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: beige;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    input:focus {
+      background-color: gainsboro;
+    }
+    button {
+      width: 100%;
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>숙박 예약</h3>
+
+    <label for="name">이름:</label> <br>
+    <input type="text" id="name"> <br>
+    <label for="in">체크인 날짜:</label><br>
+    <input type="date" id="in"> <br>
+    <label for="out">체크아웃 날짜</label> <br>
+    <input type="date" id="out"> <br>
+    <label for="type">객실 유형:</label> <br>
+    <input type="text" id="type"> <br>
+    <label for="mamo">요청 사항:</label> <br>
+    <textarea id="mamo" rows="5" placeholder="요청 사항을 입력하세요."></textarea>
+
+    <br>
+    <button>예약하기</button>
+
+  </div>
+</body>
+</html>
