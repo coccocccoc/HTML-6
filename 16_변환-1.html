@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 공통 스타일 */
+    div {
+      width: 100px;
+      height: 100px;
+    }
+    /* 부모와 자식이 겹쳐져 있는 상태 */
+    .parent {
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      background-color: skyblue;
+    }
+    /* 첫번째 박스 */
+    /* transform: 요소를 이동시키는 변환 함수 */
+    .child1 {
+      /* x축으로 40, y축으로 40만큼 이동시킴 */
+      transform: translate(40px, 40px);
+    }
+    /* 두번째 박스 */
+    .child2 {
+      /* x축으로 40만큼 이동 */
+      transform: translateX(40px);
+    }
+    /* 세번째 박스 */
+    .child3 {
+      /* y축으로 40만큼 이동 */
+      transform: translateY(40px);
+    }
+  </style>
+</head>
+<body>
+  <!-- class 이름을 여러개 사용하는 이유 -->
+  <!-- 다양한 스타일을 적용하기 위해서 -->
+  <div class="parent">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child2"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child3"></div>
+  </div>
+</body>
+</html>

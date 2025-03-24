@@ -1,0 +1,39 @@
+/* 전체 */
+body {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column; 
+}
+/* header main footer */
+/* 1:8:1 비율로 남는 공간을 배분 */
+header, footer {
+  background-color: gray;
+  flex-grow: 1;
+}
+/* left center right */
+/* main을 flex 컨테이너로 설정 */
+/* 수평 방향으로 정렬 */
+main {
+  flex-grow: 8;
+  display: flex;
+}
+main>section:nth-child(1) {
+  background-color: skyblue;
+  flex-grow: 2;
+}
+main > section:nth-child(2) {
+  background-color: gainsboro;
+  flex-grow: 6
+  ;
+}
+main>section:nth-child(3) {
+  background-color: red;
+  flex-grow: 2;
+}
+* {
+  text-align: center;
+}
+section {
+  font-weight: bold;
+}

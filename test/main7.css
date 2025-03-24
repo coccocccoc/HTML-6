@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+/* body를 flex 컨테이너로 설정 */
+/* header main footer 배치 */
+body {
+  display: flex;
+  flex-direction: column;
+  /* 높이는 고정값 */
+  height: 1000px;
+}
+/* header 스타일 */
+/* 로고와 메뉴를 수평으로 정렬 */
+/* 헤더를 상단에 고정 */
+header {
+  /* flex-grow: 2; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(248, 248, 238);
+  padding: 10px;
+  /* 아래쪽에만 테두리 추가 */
+  border-bottom: 1px solid gray;
+  /* 교차축(y)을 기준으로 가운데 정렬 */
+  align-items: center;
+  /* header를 상단에 고정 */
+  position: fixed;
+  top: 0;
+  /* header에 flex-grow랑 position을 같이 써서 찌그러짐 */
+  /* header는 flex-grow 대신 고정높이 주기 */
+}
+/* 메뉴도 수평 방향으로 정렬 */
+ul {
+  display: flex;
+  /* 리스트 표기 제거 */
+  list-style: none;
+}
+/* 메뉴 여백 */
+li {
+  margin-right: 5px;
+}
+/* 링크 밑줄 제거 */
+a {
+    text-decoration: none;
+    color: gray;
+    /* 줄 높이 */
+    line-height: 2;
+}
+/* nav(메뉴)의 위치를 오른쪽에 배치 */
+/* right: 오른쪽에서 왼쪽으로 10 이동 */
+/* 부모를 기준으로 10만큼 이동 */
+nav {
+  position: absolute;
+  right: 10px;
+}
+/* main */
+/* 배경 이미지 설정 */
+/* 이미지들을 가운데로 정렬 */
+/* 컨테이너로 설정 */
+main {
+  /* main 위쪽이 겹침 */
+  /* header 높이만큼 위쪽 여백 주기 */
+  margin-top: 100px;
+  flex-grow: 6;
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  display: flex;
+  /* 주축을 기준으로 가운데 정렬 */
+  justify-content: center;
+}
+/* 위에서 이미지가 정렬이 되지 않은 이유 */
+/* section에서 정렬해야 함 */
+section {
+  display: flex;
+  /* 교차축을 기준으로 가운데 정렬 */
+  align-items: center;
+}
+/* footer 스타일 */
+footer {
+  flex-grow: 3;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  /* section 가운데 정렬 */
+  /* 주축: y */
+  justify-content: center;
+  /* 교차축: x */
+  align-items: center;
+}
+/* 버튼 */
+button {
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+/* 버튼 위에 마우스를 올리면 색 변경 */
+/* 상태 선택자 사용 */
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
+}
+
+/* span */
+span {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-right: 20px;
+}
